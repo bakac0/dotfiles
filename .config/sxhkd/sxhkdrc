@@ -1,0 +1,54 @@
+# browser
+super + w
+    exo-open --launch WebBrowser
+
+# terminal
+super + Return
+   kitty
+
+# file manager
+super + f
+    exo-open --launch FileManager
+
+# program launcher
+super + d
+    rofi_run -r
+
+# reload bspwm
+super + shift + r
+    pkill -USR1 -x sxhkd
+    bspc wm -r
+
+# quit bspwm 
+super + shift + ctrl + l
+    rofi_run -l
+
+# close and kill
+super + shift + q
+    bspc node -c
+
+# alternate between the tiled and monocle layout
+super + shift + m
+    bspc desktop -l next
+
+# focus to nodes
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# screenshot 
+super + shift + s
+    flameshot gui
+
+
+
+# volume control keys
+XF86AudioMute
+    pamixer -t
+XF86AudioRaiseVolume
+    pamixer -i 2
+XF86AudioLowerVolume
+    pamixer -d 2
+XF86MonBrightnessUp
+    xbacklight +10
+XF86MonBrightnessDown
+    xbacklight -10
