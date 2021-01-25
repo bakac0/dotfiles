@@ -1,7 +1,7 @@
 # browser
 super + w
-    exo-open --launch WebBrowser
-
+   brave
+    
 # terminal
 super + Return
    kitty

@@ -5,6 +5,9 @@ xsetroot -cursor_name left_ptr
 
 # Autostart
 sxhkd &
+discord &
+slack &
+wmname LG3D &
 $HOME/.config/polybar/launch.sh
 
 # Set some bsp specific stuff
