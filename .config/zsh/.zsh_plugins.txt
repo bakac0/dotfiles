@@ -1,0 +1,10 @@
+rupa/z              # some bash plugins work too
+sindresorhus/pure   # enhance your prompt
+
+ohmyzsh/ohmyzsh path:plugins/extract
+
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-history-substring-search
+
+agkozak/zsh-z
