@@ -21,6 +21,7 @@ select-word-style bash
 [[ ! -f ~/.config/zsh/aliases.zsh ]] || source ~/.config/zsh/aliases.zsh
 [[ ! -f ~/.config/zsh/exports.zsh ]] || source ~/.config/zsh/exports.zsh
 [[ ! -f ~/.config/zsh/completions.zsh ]] || source ~/.config/zsh/completions.zsh
+[[ ! -f ~/.config/zsh/functions.zsh ]] || source ~/.config/zsh/functions.zsh
 
 # Load plugins
 zsh_plugins=${ZDOTDIR:-$HOME}/.zsh_plugins
