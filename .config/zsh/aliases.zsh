@@ -12,3 +12,13 @@ alias cls="ls -lha --color=always -F --group-directories-first |awk '{k=0;s=0;fo
 # DOTFILES 
 # https://www.atlassian.com/git/tutorials/dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+alias proto="protoc --go_out=plugins=grpc,paths=source_relative:. "
+
+# K8S
+alias k="kubectl"
+alias kpo="k get po"
+alias ksv="k get svc"
+kns(){
+  kubectl config set-context --current --namespace=$(kubectl get namespace --no-headers | fzf | awk '{ print $
+}
