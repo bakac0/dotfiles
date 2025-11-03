@@ -1,0 +1,137 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+shift+alt+i",
+    "command": "editor.action.inspectTMScopes"
+  },
+  // Navigation
+  {
+    "key": "ctrl-h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl-l",
+    "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "ctrl-k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "ctrl-j",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.files.action.focusFilesExplorer",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-extension.vim_ctrl+f",
+    "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert'"
+  },
+  {
+    "key": "shift+k",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "g I",
+    "command": "editor.action.goToImplementation",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "g d",
+    "command": "editor.action.revealDefinition",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "g D",
+    "command": "editor.action.revealDeclaration",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "g r",
+    "command": "editor.action.goToReferences",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "g y",
+    "command": "editor.action.goToTypeDefinition",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space l a",
+    "command": "editor.action.quickFix",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space l G",
+    "command": "workbench.action.showAllSymbols",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space l R",
+    "command": "editor.action.goToReferences",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space l r",
+    "command": "editor.action.rename",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space l s",
+    "command": "workbench.action.gotoSymbol",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space l f",
+    "command": "editor.action.formatDocument",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space f C",
+    "command": "workbench.action.showCommands",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space f f",
+    "command": "workbench.action.quickOpen",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space f n",
+    "command": "notifications.showList",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space f o",
+    "command": "workbench.action.openRecent",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space f t",
+    "command": "workbench.action.selectTheme",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space f w",
+    "command": "workbench.action.findInFiles",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  }
+]
